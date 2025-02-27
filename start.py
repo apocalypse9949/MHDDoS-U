@@ -43,7 +43,7 @@ logger = getLogger("MHDDoS")
 logger.setLevel("INFO")
 ctx: SSLContext = create_default_context(cafile=where())
 ctx.check_hostname = False
-ctx.verify_mode = CERT_NONE
+ctx.verify_mode = CERT_NONE 
 
 __version__: str = "2.4 SNAPSHOT"
 __dir__: Path = Path(__file__).parent
